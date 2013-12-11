@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.file-panel {background-color: #acd4f0; padding: 5px;}
+
+/*
+#tab {}
+#tab ul {overflow: auto; position: relative; top: 1px;}
+#tab ul li {float:left;margin:0;padding:10px 40px;background-color:#acd4f0;font-weight:bold;border: none;border-radius: 4px 4px 0 0;cursor:pointer;}
+#tab ul li.selected {background-color: white; border: 1px solid #eee; border-bottom: none; cursor: default;}
+
+
+#main {background-color: white; border: 1px solid #eee;}
+#main .tab-content {overflow: auto;}
+#main .tab-content.selected {display: block;}
+*/
+
+.file-panel .main {background-color: white; border: 1px solid #eee; overflow: auto;}
+
+#group {float:left;width:179px;min-height:420px;border-right: 1px solid #eee;}
+#group ul li {margin: 4px 0; height: 24px; padding: 4px 5px 0 15px; cursor: pointer; overfloat: auto; font-weight: bold;}
+#group ul li.selected {padding-left: 20px;background-color: #acd4f0;background: -webkit-gradient(linear, left top, right bottom, from(#acd4f0), to(#fff));}
+#group ul li .group-item-label {float: left; padding-top: 5px;}
+#group ul li .edit {float: right;}
+
+#file {float: left; width: calc(100% - 180px);min-height: 400px;}
+ul.file-list {overflow: auto;}
+ul.file-list li {float: left;  width: 150px; padding: 5px; height: 240px; border: 1px solid #eee; margin: 15px;}
+ul.file-list li img {display: block; width: 150px; height: 150px;}
+
+.upload-invoker-bg {background-color: #eee; overflow: auto;}
+.upload-invoker {float: right; margin: 5px 15px; width: 150px; height: 40px; line-height: 40px; text-align: center; cursor: pointer;border:1px solid #0077bb;border-radius: 4px; box-shadow:  1px 1px 2px #aaa;}
+.upload-invoker:hover {box-shadow: 0px 0px 2px #777;}
+
+/*upload file selection*/
+.uploadfile-button {
+	display: block;
+	position: relative;
+	width: 140px;  
+	height: 40px;
+	border: 1px solid #0077bb;
+	background-color: #eee;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+	float: left;
+}
+.uploadfile-button .icon {margin: 5px 15px 0 15px;width: 30px;height: 30px;font-size: 26px;font-weight: bold;border-radius: 15px;background-color: #ccc;color: #0077bb;float: left;border: none;}
+.uploadfile-button .text {float: left;font-weight: bold;margin: 15px 0 0 5px;}
+.uploadfile-button:hover .icon {background-color: #0077bb;color: white;}
+.uploadfile-progressbar {float: left;margin: 15px 0 0 5px;width: 600px;height: 10px;border: 1px solid #ccc;}
+#uploadfile {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 40px;
+	font-size: 100px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	overflow: hidden;
+}
+.upload-list {overflow: auto;height: 400px;margin: 10px 0; border-bottom: 2px solid #ccc;}
+.upload-list li {background-color: #f0f0f0;border-bottom: 1px dashed #ccc; width: calc(100% - 40px);margin: 10px;padding: 5px;overflow: auto;}
+.upload-list li .remove-file {float: left; cursor: pointer;}
+.upload-list li .name {float: left;margin-left: 5px;font-weight: bold;}
+.upload-list li .size {float: right;}
+.upload-list li.uploading {background-color: yellow;}
+.upload-list li.uploaded {background-color: green;}
+.upload-list li.removed {display: none;}
+
+#upload-start {width: 180px;height: 60px;border: 1px solid #0077bb;background-color: #eee;cursor: pointer; border-radius: 4px;}
+#upload-start .icon {float: left;margin: 14px 0 0 14px;width: 32px;height: 32px;background: red;}
+#upload-start .text {float: left;margin-left: 15px;font-weight: bold; color: #0077bb; line-height: 60px;}
+
+#paginator {padding: 5px;border-top: 1px solid #eee;}
+#paginator ul {overflow:auto; height:45px;}
+#paginator ul li {float:left;margin:0 2px;}
+#paginator ul li.current {font-size:larger;font-weight:bold;padding:5px;}
+#paginator ul li.desc {clear: left; float: left; padding-top: 5px; color: #777;}
+#paginator ul li a {display: block;padding: 5px;border: 1px solid #aaa;}
